@@ -1,5 +1,5 @@
-import healthDogs from '../../assets/health-dogs.png'
-import healthKibble from '../../assets/health-kibble.png'
+import HappyDogs from '../../assets/dogs.svg'
+import Food from '../../assets/food.svg'
 import FeatureRow from './FeatureRow'
 
 const features = [
@@ -8,7 +8,7 @@ const features = [
       'Improve overall gastrointestinal health for better nutrient absorption',
     description:
       'Through rigorous scientific studies and consultations with veterinarians, we have created a breakthrough formula exclusively tailored to combat the health challenges prevalent in dogs. A staggering 91% of our customers have reported significant improvements in their dogs\u2019 health after incorporating our product into their diet.',
-    image: healthDogs,
+    image: HappyDogs,
     imageAlt: 'Two dogs eating Happy Dog Bites from white bowls',
     reverse: false,
   },
@@ -17,7 +17,7 @@ const features = [
       'Prebiotics nourish the beneficial gut bacteria, supporting digestive health',
     description:
       'Our dog food formula contains carefully selected prebiotics that work in harmony with the gut microbiota, providing the necessary nutrients for the growth and maintenance of beneficial bacteria, ultimately supporting digestive health.',
-    image: healthKibble,
+    image: Food,
     imageAlt: 'Close-up of premium dog food kibble',
     reverse: true,
   },

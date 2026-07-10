@@ -1,4 +1,4 @@
-import nutritionDog from '../../assets/nutrition-dog-cropped.png'
+import HappyDog from '../../assets/happy-dog.svg'
 import KeyPointItem from './KeyPointItem'
 
 const keyPoints = [
@@ -21,23 +21,23 @@ const keyPoints = [
 
 export default function NutritionSection() {
   return (
-    <section className="bg-[#F5F5F5] px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
-      <div className="mx-auto grid max-w-[1100px] items-center gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-16">
+    <section className="bg-[#F8F8F8] px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
+      <div className="mx-auto grid max-w-[1100px] items-center gap-8 lg:grid-cols-2 lg:gap-10 xl:gap-16">
         <div className="flex flex-col">
-          <h2 className="text-[28px] font-bold leading-[1.25] tracking-tight text-[#111827] sm:text-[32px] lg:text-[36px]">
+          <h2 className="text-[36px] font-semibold leading-[1.25] tracking-tight text-[#161723] sm:text-[32px] lg:text-[36px]">
             Nutrition is the foundation for longer, healthier lives in dogs.
           </h2>
 
-          <p className="mt-5 text-sm leading-relaxed text-[#6B7280] sm:text-[15px] lg:mt-6">
+          <p className="mt-2 leading-relaxed text-[#424153] sm:text-[15px] lg:mt-3">
             Invest in your dog&apos;s future with our scientifically formulated
             superfood-powered supplements. Give them the nutrition they deserve
             and watch them thrive with vitality, energy, and the joy of a longer,
             healthier life.
           </p>
 
-          <div className="mt-8 lg:mt-10">
-            <h3 className="text-sm font-bold text-[#111827]">Key Points:</h3>
-            <div className="mt-3">
+          <div className="mt-6 lg:mt-6">
+            <h3 className="text-[19px] font-semibold text-[#161723]">Key Points:</h3>
+            <div>
               {keyPoints.map((point) => (
                 <KeyPointItem
                   key={point.percentage}
@@ -50,7 +50,7 @@ export default function NutritionSection() {
 
           <button
             type="button"
-            className="mt-8 w-full rounded-md bg-[#D07A56] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_2px_0_#B8684A] transition-colors hover:bg-[#C4724F] active:bg-[#B8684A] sm:mt-10 sm:text-[15px]"
+            className="mt-4 w-full rounded-md bg-[#EE6F4B] px-6 py-3.5 text-sm font-semibold text-white sm:mt-10 sm:text-[15px]"
           >
             Give your furry friend the gift of wholesome nutrition
           </button>
@@ -58,7 +58,7 @@ export default function NutritionSection() {
 
         <div className="overflow-hidden rounded-2xl">
           <img
-            src={nutritionDog}
+            src={HappyDog}
             alt="Happy dog with Happy Dog Bites food pouch"
             className="h-full w-full object-cover object-center"
           />

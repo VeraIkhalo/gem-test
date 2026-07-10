@@ -32,10 +32,10 @@ export default function FeatureRow({
           reverse ? 'order-2 lg:order-1' : 'order-2'
         }`}
       >
-        <h2 className="text-[24px] font-bold leading-[1.3] tracking-tight text-[#111827] sm:text-[28px] lg:text-[32px]">
+        <h2 className="text-[40px] font-semibold leading-[1.3] tracking-tight text-[#161723] sm:text-[28px] lg:text-[40px]">
           {title}
         </h2>
-        <p className="mt-4 text-sm leading-relaxed text-[#6B7280] sm:text-[15px] lg:mt-5">
+        <p className="mt-4 text-sm leading-relaxed text-[#424153] sm:text-[15px] lg:mt-5">
           {description}
         </p>
       </div>
