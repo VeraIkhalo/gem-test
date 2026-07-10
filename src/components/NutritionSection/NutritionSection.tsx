@@ -1,7 +1,7 @@
-import HappyDog from '../../assets/happy-dog.svg'
+import happyDog from '../../assets/happy-dog.svg'
 import KeyPointItem from './KeyPointItem'
 
-const keyPoints = [
+const stats = [
   {
     percentage: '97%',
     description:
@@ -17,32 +17,34 @@ const keyPoints = [
     description:
       "Our dog food's high protein and fat digestibility contribute to ideal stool quality.",
   },
-] as const
+]
 
 export default function NutritionSection() {
   return (
-    <section className="bg-[#F8F8F8] px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
+    <section className="bg-panel px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
       <div className="mx-auto grid max-w-[1100px] items-center gap-8 lg:grid-cols-2 lg:gap-10 xl:gap-16">
-        <div className="flex flex-col">
-          <h2 className="text-[36px] font-semibold leading-[1.25] tracking-tight text-[#161723] sm:text-[32px] lg:text-[36px]">
-            Nutrition is the foundation for longer, healthier lives in dogs.
+        <div>
+          <h2 className="text-[32px] font-semibold leading-tight tracking-tight text-ink lg:text-[36px]">
+            Nutrition is the foundation for
+            <br />
+            longer, healthier lives in dogs.
           </h2>
 
-          <p className="mt-2 leading-relaxed text-[#424153] sm:text-[15px] lg:mt-3">
+          <p className="mt-3 leading-relaxed text-body">
             Invest in your dog&apos;s future with our scientifically formulated
             superfood-powered supplements. Give them the nutrition they deserve
             and watch them thrive with vitality, energy, and the joy of a longer,
             healthier life.
           </p>
 
-          <div className="mt-6 lg:mt-6">
-            <h3 className="text-[19px] font-semibold text-[#161723]">Key Points:</h3>
+          <div className="mt-6">
+            <h3 className="text-[19px] font-semibold text-ink">Key Points:</h3>
             <div>
-              {keyPoints.map((point) => (
+              {stats.map((stat) => (
                 <KeyPointItem
-                  key={point.percentage}
-                  percentage={point.percentage}
-                  description={point.description}
+                  key={stat.percentage}
+                  percentage={stat.percentage}
+                  description={stat.description}
                 />
               ))}
             </div>
@@ -50,7 +52,7 @@ export default function NutritionSection() {
 
           <button
             type="button"
-            className="mt-4 w-full rounded-md bg-[#EE6F4B] px-6 py-3.5 text-sm font-semibold text-white sm:mt-10 sm:text-[15px]"
+            className="mt-10 w-full rounded-md bg-brand px-6 py-3.5 text-sm font-semibold text-white sm:text-[15px]"
           >
             Give your furry friend the gift of wholesome nutrition
           </button>
@@ -58,9 +60,9 @@ export default function NutritionSection() {
 
         <div className="overflow-hidden rounded-2xl">
           <img
-            src={HappyDog}
-            alt="Happy dog with Happy Dog Bites food pouch"
-            className="h-full w-full object-cover object-center"
+            src={happyDog}
+            alt="Dog sitting next to a Happy Dog Bites pouch"
+            className="h-full w-full object-cover"
           />
         </div>
       </div>

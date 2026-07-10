@@ -1,6 +1,6 @@
-import FeatureSection from './components/FeatureSection'
-import HealthFeaturesSection from './components/HealthFeaturesSection'
-import NutritionSection from './components/NutritionSection'
+import FeatureSection from './components/FeatureSection/FeatureSection'
+import HealthFeaturesSection from './components/HealthFeaturesSection/HealthFeaturesSection'
+import NutritionSection from './components/NutritionSection/NutritionSection'
 
 function App() {
   return (

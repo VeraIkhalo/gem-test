@@ -2,18 +2,12 @@
 
 @theme {
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-}
 
-.comparison-slider {
-  --slider-position: 50%;
-}
-
-.comparison-slider-overlay {
-  clip-path: inset(0 calc(100% - var(--slider-position)) 0 0);
-}
-
-.comparison-slider-divider {
-  left: var(--slider-position);
+  --color-ink: #161723;
+  --color-body: #424153;
+  --color-brand: #ee6f4b;
+  --color-line: #e3e3e8;
+  --color-panel: #f8f8f8;
 }
 
 body {
