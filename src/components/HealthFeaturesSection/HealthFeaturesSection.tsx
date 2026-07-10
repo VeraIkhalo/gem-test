@@ -23,7 +23,7 @@ const rows = [
 export default function HealthFeaturesSection() {
   return (
     <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
-      <div className="mx-auto flex max-w-[1100px] flex-col gap-16 lg:gap-24 xl:gap-28">
+      <div className="mx-auto flex max-w-275 flex-col gap-16 lg:gap-24 xl:gap-28">
         {rows.map((row) => (
           <FeatureRow key={row.title} {...row} />
         ))}

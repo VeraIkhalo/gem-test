@@ -42,15 +42,15 @@ const rightFeatures = [
 export default function FeatureSection() {
   return (
     <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
-      <div className="mx-auto max-w-[1100px]">
-        <h2 className="mx-auto max-w-[520px] text-center text-[28px] font-semibold leading-tight tracking-tight text-ink sm:text-[32px] lg:text-[40px]">
+      <div className="mx-auto max-w-275">
+        <h2 className="mx-auto max-w-130 text-center text-[28px] font-semibold leading-tight tracking-tight text-ink sm:text-[32px] lg:text-[40px]">
           What makes us different
           <br />
           makes them stronger
         </h2>
 
         <div className="mt-10 flex flex-col items-center gap-10 lg:mt-14 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-6 xl:gap-10">
-          <div className="flex w-full max-w-[320px] flex-col gap-10 lg:max-w-none lg:gap-20 lg:pr-2">
+          <div className="flex w-full max-w-80 flex-col gap-10 lg:max-w-none lg:gap-20 lg:pr-2">
             {leftFeatures.map((feature) => (
               <FeatureItem key={feature.title} side="right" {...feature} />
             ))}
@@ -59,17 +59,20 @@ export default function FeatureSection() {
           <img
             src={dogFood}
             alt="Comparison of fresh dog food and kibble"
-            className="size-[280px] sm:size-[340px] lg:size-[380px]"
+            className="size-70 sm:size-85 lg:size-95"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
           />
 
-          <div className="flex w-full max-w-[320px] flex-col gap-10 lg:max-w-none lg:gap-20 lg:pl-2">
+          <div className="flex w-full max-w-80 flex-col gap-10 lg:max-w-none lg:gap-20 lg:pl-2">
             {rightFeatures.map((feature) => (
               <FeatureItem key={feature.title} side="right" {...feature} />
             ))}
           </div>
         </div>
 
-        <div className="mx-auto mt-10 max-w-[440px] sm:mt-12">
+        <div className="mx-auto mt-10 max-w-110 sm:mt-12">
           <button
             type="button"
             className="w-full rounded-md bg-brand px-6 py-3.5 text-base font-semibold text-white"
@@ -79,16 +82,16 @@ export default function FeatureSection() {
 
           <div className="mt-4 flex flex-col items-center justify-between gap-3 sm:flex-row sm:gap-4">
             <div className="flex items-center gap-1.5">
-              <img src={shield} alt="" className="size-4" />
+              <img src={shield} alt="" className="size-4" loading="eager" decoding="async" />
               <span className="text-[13px] text-body">30-day money back guarantee</span>
             </div>
 
             <div className="flex items-center gap-2.5 opacity-80">
-              <img src={paypal} alt="PayPal" className="h-[18px] w-auto" />
-              <img src={visa} alt="Visa" className="h-[18px] w-auto" />
-              <img src={mastercard} alt="Mastercard" className="h-[18px] w-auto" />
-              <img src={applePay} alt="Apple Pay" className="h-[18px] w-auto" />
-              <img src={googlePay} alt="Google Pay" className="h-[18px] w-auto" />
+              <img src={paypal} alt="PayPal" className="h-4.5 w-auto" loading="eager" decoding="async" />
+              <img src={visa} alt="Visa" className="h-4.5 w-auto" loading="eager" decoding="async" />
+              <img src={mastercard} alt="Mastercard" className="h-4.5 w-auto" loading="eager" decoding="async" />
+              <img src={applePay} alt="Apple Pay" className="h-4.5 w-auto" loading="eager" decoding="async" />
+              <img src={googlePay} alt="Google Pay" className="h-4.5 w-auto" loading="eager" decoding="async" />
             </div>
           </div>
         </div>

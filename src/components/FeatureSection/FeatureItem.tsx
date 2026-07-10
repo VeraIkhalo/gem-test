@@ -21,11 +21,17 @@ export default function FeatureItem({
           : 'flex-row lg:text-left'
       }`}
     >
-      <div className="h-[60px] w-[60px] shrink-0">
-        <img src={icon} alt="" className="h-full w-full object-contain" />
+      <div className="h-15 w-15 shrink-0">
+        <img
+          src={icon}
+          alt=""
+          className="h-full w-full object-contain"
+          loading="eager"
+          decoding="async"
+        />
       </div>
 
-      <div className="max-w-[220px]">
+      <div className="max-w-55">
         <h3 className="text-[19px] font-semibold leading-snug text-ink">{title}</h3>
         <p className="mt-2 leading-relaxed text-body">{description}</p>
       </div>

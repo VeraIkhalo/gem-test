@@ -22,7 +22,7 @@ const stats = [
 export default function NutritionSection() {
   return (
     <section className="bg-panel px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
-      <div className="mx-auto grid max-w-[1100px] items-center gap-8 lg:grid-cols-2 lg:gap-10 xl:gap-16">
+      <div className="mx-auto grid max-w-275 items-center gap-8 lg:grid-cols-2 lg:gap-10 xl:gap-16">
         <div>
           <h2 className="text-[32px] font-semibold leading-tight tracking-tight text-ink lg:text-[36px]">
             Nutrition is the foundation for
@@ -63,6 +63,8 @@ export default function NutritionSection() {
             src={happyDog}
             alt="Dog sitting next to a Happy Dog Bites pouch"
             className="h-full w-full object-cover"
+            loading="eager"
+            decoding="async"
           />
         </div>
       </div>
