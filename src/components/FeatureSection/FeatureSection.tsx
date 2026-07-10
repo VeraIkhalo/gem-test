@@ -52,7 +52,7 @@ export default function FeatureSection() {
         <div className="mt-10 flex flex-col items-center gap-10 lg:mt-14 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-6 xl:gap-10">
           <div className="flex w-full max-w-[320px] flex-col gap-10 lg:max-w-none lg:gap-20 lg:pr-2">
             {leftFeatures.map((feature) => (
-              <FeatureItem key={feature.title} side="left" {...feature} />
+              <FeatureItem key={feature.title} side="right" {...feature} />
             ))}
           </div>
 
