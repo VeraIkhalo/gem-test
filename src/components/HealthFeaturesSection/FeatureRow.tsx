@@ -20,6 +20,8 @@ export default function FeatureRow({
           src={image}
           alt={imageAlt}
           className="aspect-[4/3] w-full object-cover sm:aspect-[16/11]"
+          loading="eager"
+          decoding="async"
         />
       </div>
 
